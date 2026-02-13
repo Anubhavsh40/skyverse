@@ -1,0 +1,169 @@
+.admin-container {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background: #f5f5f5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-logo h2 {
+  margin-bottom: 5px;
+}
+
+.sidebar-logo span {
+  font-size: 13px;
+  color: gray;
+}
+
+.sidebar nav {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sidebar nav a {
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 8px;
+  color: black;
+}
+
+.sidebar nav a.active {
+  background: linear-gradient(to right, #4f8cff, #7b5cff);
+  color: white;
+}
+
+.sidebar-bottom {
+  margin-top: auto;
+}
+
+.logout-btn {
+  background: none;
+  border: none;
+  color: red;
+  cursor: pointer;
+}
+
+/* Main */
+.admin-main {
+  flex: 1;
+  background: #f9fafb;
+  padding: 30px;
+  overflow-y: auto;
+}
+
+.admin-navbar h1 {
+  margin-bottom: 5px;
+}
+
+.admin-navbar p {
+  color: gray;
+}
+
+/* Stats */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.stat-card {
+  background: white;
+  padding: 20px 22px 18px;
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(15, 23, 42, 0.08);
+  border: 1px solid rgba(15, 23, 42, 0.05);
+}
+
+.stat-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.stat-card h4 {
+  margin: 2px 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #64748b;
+}
+
+.stat-card h2 {
+  margin: 0;
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.stat-subtext {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+.stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+}
+
+.stat-icon svg {
+  width: 22px;
+  height: 22px;
+  fill: currentColor;
+}
+
+.stat-icon-blue {
+  color: #3b82f6;
+  background: #e8f1ff;
+}
+
+.stat-icon-purple {
+  color: #8b5cf6;
+  background: #f1e9ff;
+}
+
+.stat-icon-green {
+  color: #10b981;
+  background: #e7f8f1;
+}
+
+.stat-icon-orange {
+  color: #f59e0b;
+  background: #fff3dc;
+}
+
+/* AI Banner */
+.ai-banner {
+  margin-top: 30px;
+  padding: 30px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #4f8cff, #7b5cff);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ai-banner button {
+  background: white;
+  color: #4f8cff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+}
